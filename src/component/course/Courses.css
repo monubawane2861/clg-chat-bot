@@ -1,0 +1,413 @@
+/* Courses.css */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap");
+
+/* Global Styles */
+.courses-page {
+  font-family: "Poppins", sans-serif;
+  color: #333;
+  background-color: #f8f9fa;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+/* Hero Section */
+.courses-hero {
+  background-color: #5c6bc0;
+  color: white;
+  padding: 100px 0;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+}
+
+.courses-hero::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.3);
+  z-index: 1;
+}
+
+.courses-hero-content {
+  position: relative;
+  z-index: 2;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.courses-hero h1 {
+  font-size: 3.5rem;
+  margin-bottom: 20px;
+  font-weight: 700;
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+.courses-hero p {
+  font-size: 1.25rem;
+  margin-bottom: 30px;
+  line-height: 1.6;
+  font-weight: 300;
+}
+
+/* Filter Section */
+.filter-section {
+  background-color: white;
+  padding: 20px 0;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+.filter-buttons {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 15px;
+}
+
+.filter-button {
+  background-color: #f0f0f0;
+  border: none;
+  padding: 12px 25px;
+  border-radius: 30px;
+  cursor: pointer;
+  font-weight: 500;
+  transition: all 0.3s ease;
+  font-size: 0.95rem;
+  color: #555;
+}
+
+.filter-button:hover {
+  background-color: #e0e0e0;
+  transform: translateY(-2px);
+}
+
+.filter-button.active {
+  background-color: #5c6bc0;
+  color: white;
+  box-shadow: 0 4px 10px rgba(26, 42, 108, 0.3);
+}
+
+/* Courses Grid */
+.courses-grid-section {
+  padding: 60px 0;
+}
+
+.courses-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+  gap: 30px;
+}
+
+.course-card {
+  background-color: white;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.05);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.course-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
+}
+
+.course-image {
+  height: 200px;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+}
+
+.course-category {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  background-color: #5c6bc0;
+  color: white;
+  padding: 8px 15px;
+  border-radius: 20px;
+  font-size: 0.8rem;
+  font-weight: 500;
+  text-transform: uppercase;
+}
+
+.course-content {
+  padding: 25px;
+}
+
+.course-card h3 {
+  margin-top: 0;
+  margin-bottom: 15px;
+  font-size: 1.3rem;
+  color: #333;
+  font-weight: 600;
+  line-height: 1.4;
+}
+
+.course-meta {
+  display: flex;
+  margin-bottom: 15px;
+  color: #666;
+  font-size: 0.9rem;
+}
+
+.meta-item {
+  display: flex;
+  align-items: center;
+  margin-right: 20px;
+}
+
+.meta-item i {
+  margin-right: 8px;
+  color: #1a2a6c;
+}
+
+.course-description {
+  margin-bottom: 20px;
+  line-height: 1.6;
+  color: #555;
+}
+
+.course-features {
+  margin-bottom: 25px;
+}
+
+.course-features h4 {
+  font-size: 1rem;
+  margin-bottom: 10px;
+  color: #444;
+}
+
+.course-features ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.course-features li {
+  padding: 5px 0;
+  display: flex;
+  align-items: center;
+}
+
+.course-features li i {
+  color: #22c55e;
+  margin-right: 10px;
+}
+
+.btn-apply {
+  background-color: #5c6bc0;
+  color: white;
+  border: none;
+  padding: 12px 25px;
+  border-radius: 30px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  display: block;
+  width: 100%;
+  font-size: 1rem;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.btn-apply:hover {
+  box-shadow: 0 5px 15px rgba(26, 42, 108, 0.4);
+  transform: translateY(-3px);
+}
+
+/* Admission Section */
+.admission-section {
+  background-color: #5c6bc0;
+  color: white;
+  padding: 80px 0;
+  text-align: center;
+}
+
+.admission-content {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.admission-content h2 {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+  font-weight: 700;
+}
+
+.admission-content p {
+  font-size: 1.1rem;
+  margin-bottom: 30px;
+  font-weight: 300;
+  line-height: 1.6;
+}
+
+.btn-primary {
+  background-color: white;
+  color: #1a2a6c;
+  border: none;
+  padding: 14px 30px;
+  border-radius: 30px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  font-size: 1rem;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.btn-primary:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+  background-color: #f8f9fa;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  .courses-hero h1 {
+    font-size: 2.5rem;
+  }
+
+  .courses-grid {
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  }
+
+  .admission-content h2 {
+    font-size: 2rem;
+  }
+}
+
+@media (max-width: 576px) {
+  .courses-hero h1 {
+    font-size: 2rem;
+  }
+
+  .courses-hero p {
+    font-size: 1rem;
+  }
+
+  .filter-button {
+    padding: 10px 20px;
+    font-size: 0.85rem;
+  }
+
+  .course-card h3 {
+    font-size: 1.2rem;
+  }
+
+  .admission-content h2 {
+    font-size: 1.8rem;
+  }
+
+  .admission-content p {
+    font-size: 1rem;
+  }
+}
+/* Add these styles to your Courses.css file */
+
+/* Button container to ensure proper alignment */
+.button-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 1rem;
+}
+
+/* Style for the Apply Now button */
+.btn-apply {
+  background-color: #4c5797;
+  color: white;
+  border: none;
+  padding: 0.7rem 1.5rem;
+  border-radius: 5px;
+  font-weight: 600;
+  transition: all 0.3s ease;
+  cursor: pointer;
+  width: 100%;
+}
+
+.btn-apply:hover {
+  background-color: #3a4372;
+  transform: translateY(-2px);
+}
+
+/* Popup overlay - covers the entire screen */
+.popup-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+/* Popup content */
+.popup-content {
+  background-color: white;
+  padding: 2rem;
+  border-radius: 8px;
+  text-align: center;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+  max-width: 400px;
+  width: 90%;
+}
+
+.popup-content p {
+  font-size: 1.5rem;
+  margin-bottom: 1.5rem;
+  color: #4c5797;
+  font-weight: 600;
+}
+
+.popup-content button {
+  background-color: #4c5797;
+  color: white;
+  border: none;
+  padding: 0.7rem 1.5rem;
+  border-radius: 5px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.popup-content button:hover {
+  background-color: #3a4372;
+}
+
+/* Make sure the course cards have proper spacing */
+.course-card {
+  margin-bottom: 2rem;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+  background-color: white;
+}
+
+.course-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+/* Ensure consistent height for course content */
+.course-content {
+  padding: 1.5rem;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Ensure the features section doesn't push button out of alignment */
+.course-features {
+  margin-bottom: 1rem;
+}
