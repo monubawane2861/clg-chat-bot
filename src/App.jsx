@@ -9,6 +9,7 @@ import Chatbox from "./component/chatbox/Chatbox";
 import History from "./component/about/History";
 
 import "./App.css";
+// import "./common/Navbar/Navbar.css";
 
 function App() {
   return (
