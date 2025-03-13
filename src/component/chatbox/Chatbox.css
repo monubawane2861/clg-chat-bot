@@ -202,7 +202,7 @@
 
 /* Chat header */
 .chat-header {
-  background: linear-gradient(45deg, #5c6bc0, #646ec7);
+  background: linear-gradient(45deg, #3b478c, #23295e);
   padding: 15px;
   color: white;
   display: flex;
